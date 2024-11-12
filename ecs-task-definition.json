@@ -1,0 +1,25 @@
+{
+  "family": "spring-boot-dynamodb-demo",
+  "containerDefinitions": [
+    {
+      "name": "spring-boot-dynamodb-demo",
+      "image": "your-account-id.dkr.ecr.your-region.amazonaws.com/spring-boot-dynamodb-demo:latest",
+      "cpu": 256,
+      "memory": 512,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": "bridge",
+  "cpu": "256",
+  "memory": "512"
+}
